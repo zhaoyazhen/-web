@@ -1,0 +1,740 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--禁止浏览器从本地缓存中调阅页面;网页不保存在缓存中，每次访问都刷新页面-->
+<meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+
+<!--禁止百度转码 贴广告-->
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+
+<!--顶部状态条的颜色，在web app应用状态条（屏幕顶部条）的颜色；default白色 black黑色 black-translucent灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!--说明：网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--解决uc浏览器在识别到页面文字很多的情况下会自动放大字体优化阅读体验   关闭-->
+<meta name="wap-font-scale" content="no">
+
+<!--"添加到主屏幕“后，全屏显示 <meta name="apple-mobile-web-app-capable" content="yes" />
+这meta的作用就是删除默认的苹果工具栏和菜单栏。content有两个值”yes”和”no”,当我们需要显示工具栏和菜单栏时，这个行meta就不用加了，默认就是显示。-->
+<meta name="apple-touch-fullscreen" content="yes">
+
+<!--如果网页适合在移动设备上进行浏览  终端适配 应该是在移动端日益增长的流量的大势下产生的需求-->
+<meta name="applicable-device" content="mobile">
+
+<!---手机端点击时，禁止出现灰色区域的方法-->
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="keywords" content=" 珠宝街,珠宝商城,珠宝街手机版,黄金、钻石、彩宝、铂金、银饰、翡翠、玉石、珍珠、水晶、手串、手链、手镯、戒指、佛珠、工艺品、企业礼品定制">
+<meta name="description" content=" 珠宝街、珠宝街手机版-中国最大的珠宝商城网站,在线销售黄金、钻石、彩宝、铂金、银饰、翡翠、玉石、珍珠、水晶、手串、手镯、手链、戒指、项链、手表、眼镜、转运珠、佛珠、工艺品、字画收藏、企业礼品定制等海量珠宝品牌，珠宝知名大牌：周大福、老凤祥、周六福、卡地亚、百泰、菜百、周大生、中国黄金均入驻珠宝街平台，更汇聚全国知名珠宝批发基地，买珠宝,就上珠宝街！">
+<title>珠宝街触屏版 一个做真品的网站，黄金、钻石、彩宝、铂金、银饰、翡翠、珍珠、水晶，买珠宝,就上珠宝街！</title>
+<link rel="shortcut icon" href="favicon.ico"  type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="style/m_base.css">
+<link rel="stylesheet" type="text/css" href="style/swiper-3.4.2.min.css">
+<link rel="stylesheet" type="text/css" href="style/m_index.css">
+</head>
+
+<body>
+<!--header-->
+<header class="m_header">
+  <div class="m_header_l"><a href="#" class="iconfont">&#xe600;</a></div>
+  <div class="m_search_box">
+    <form action="#" method="post">
+      <input type="search" placeholder="请输入关键字">
+      <input type="submit" value="&#xe601;" class="iconfont">
+    </form>
+  </div>
+</header>
+<!--header end--> 
+<!--banner-->
+<div id="banner" class="banner">
+  <div class="swiper-container swiper-banner">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/banner1.jpg"></div>
+      <div class="swiper-slide"><img src="images/banner2.jpg"></div>
+      <div class="swiper-slide"><img src="images/banner3.jpg"></div>
+      <div class="swiper-slide"><img src="images/banner4.jpg"></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination banner-pagination"></div>
+  </div>
+</div>
+<!--banner end--> 
+<!--nav-->
+<nav class="m_nav m_layout">
+  <ul>
+    <li> <a href="#"><img src="images/pinpaijie.png"></a>
+      <p><a href="#">品牌街</a></p>
+    </li>
+    <li> <a href="#"><img src="images/chuangyidingzhi.png"></a>
+      <p><a href="#">创意订制</a></p>
+    </li>
+    <li> <a href="#"><img src="images/mingxingtongkuan.png"></a>
+      <p><a href="#">明星同款</a></p>
+    </li>
+    <li> <a href="#"><img src="images/duobaodao.png"></a>
+      <p><a href="#">夺宝岛</a></p>
+    </li>
+    <li> <a href="#"><img src="images/xuanfubang.png"></a>
+      <p><a href="#">炫富榜</a></p>
+    </li>
+    <li> <a href="#"><img src="images/zhubaojidi.png"></a>
+      <p><a href="#">珠宝基地</a></p>
+    </li>
+    <li> <a href="#"><img src="images/quanqiuqudao.png"></a>
+      <p><a href="#">全球渠道</a></p>
+    </li>
+    <li> <a href="#"><img src="images/lingquan.png"></a>
+      <p><a href="#">领券</a></p>
+    </li>
+    <li><a href="#"><img src="images/wabaozang.png"></a>
+      <p><a href="#">挖宝藏</a></p>
+    </li>
+    <li><a href="#"><img src="images/gengduo.png"></a>
+      <p><a href="#">百宝箱</a></p>
+    </li>
+  </ul>
+</nav>
+<!--nav end--> 
+<!--join_box-->
+<section class="join_box m_layout">
+  <div class="join"><img src="images/m_jiameng.jpg"></div>
+  <div class="join_show clearfix"> <a href="#"><img src="images/m_jm1.jpg"></a> <a href="#"><img src="images/m_jm2.jpg"></a> <a href="#"><img src="images/m_jm3.jpg"></a> </div>
+</section>
+<!--join_box end--> 
+<!--m_notice-->
+<section class="m_notice m_layout">
+  <h2><span>珠宝街</span><b>头条</b><i class="iconfont">&#xe604;</i></h2>
+  <!--news-->
+  <div id="news">
+    <div class="swiper-container swiper-news">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#">珠宝街全国运营中心正式启动</a></div>
+        <div class="swiper-slide"><a href="#">热烈祝贺千足珍珠集团<br>
+          <span style="color:#F36">旗舰店入驻珠宝街</span></a></div>
+        <div class="swiper-slide"><a href="#">日蕾丝风情，总是拥有撩人诱惑</a></div>
+        <div class="swiper-slide"><a href="#">一抹浅色，一帘森系动人心~</a></div>
+        <div class="swiper-slide"><a href="#">衬衫+裙子才是最美的优雅法宝！</a></div>
+        <div class="swiper-slide"><a href="#">即将推出的9部新动画电影！你最期待哪部</a></div>
+      </div>
+    </div>
+  </div>
+  <!--news end--> 
+  
+</section>
+<!--m_notice end-->
+<div class="m10"></div>
+<!--seconds_kill-->
+<section class="seconds_kill m_layout"> 
+  <!--m_time_box-->
+  <div class="m_time_box">
+    <h2 class="tit">掌上秒拍</h2>
+    <span  class="time_num"><b id="bot-box">距离开始：</b><i id="hours">00</i>:<i id="minutes">00</i>:<i id="seconds">00</i></span> <a href="#">更多好礼等你去拿<b class="iconfont">&#xe667;</b></a> </div>
+  <!--m_time_box end--> 
+  <!--m_seconds_con-->
+  <div class="m_seconds_con"> 
+    <!--swiper-container-->
+    <div class="swiper-container swiper-seconds">
+      <div class="swiper-wrapper"> 
+        <!--swiper-slide 一项-->
+        <div class="swiper-slide"> <a href="#"> <img src="images/simg1.jpg">
+          <p class="name">宝中皇 项链女 日韩版s925纯银立体皇冠公主吊坠配饰 短款锁骨链送女友</p>
+          <div class="price">
+            <p>￥154.00</p>
+            <s>￥200.20</s> </div>
+          </a> </div>
+        <!--swiper-slide 一项 end--> 
+        <!--swiper-slide 一项-->
+        <div class="swiper-slide"> <a href="#"> <img src="images/simg2.jpg">
+          <p class="name">宝中皇 项链女 日韩版s925纯银立体皇冠公主吊坠配饰 短款锁骨链送女友</p>
+          <div class="price">
+            <p>￥154.00</p>
+            <s>￥200.20</s> </div>
+          </a> </div>
+        <!--swiper-slide 一项 end--> 
+        <!--swiper-slide 一项-->
+        <div class="swiper-slide"> <a href="#"> <img src="images/simg3.jpg">
+          <p class="name">宝中皇 项链女 日韩版s925纯银立体皇冠公主吊坠配饰 短款锁骨链送女友</p>
+          <div class="price">
+            <p>￥154.00</p>
+            <s>￥200.20</s> </div>
+          </a> </div>
+        <!--swiper-slide 一项 end--> 
+        <!--swiper-slide 一项-->
+        <div class="swiper-slide"> <a href="#"> <img src="images/simg4.jpg">
+          <p class="name">宝中皇 项链女 日韩版s925纯银立体皇冠公主吊坠配饰 短款锁骨链送女友</p>
+          <div class="price">
+            <p>￥154.00</p>
+            <s>￥200.20</s> </div>
+          </a> </div>
+        <!--swiper-slide 一项 end--> 
+        <!--swiper-slide 一项-->
+        <div class="swiper-slide"> <a href="#"> <img src="images/simg5.jpg">
+          <p class="name">宝中皇 项链女 日韩版s925纯银立体皇冠公主吊坠配饰 短款锁骨链送女友</p>
+          <div class="price">
+            <p>￥154.00</p>
+            <s>￥200.20</s> </div>
+          </a> </div>
+        <!--swiper-slide 一项 end--> 
+        <!--swiper-slide 一项-->
+        <div class="swiper-slide"> <a href="#"> <img src="images/simg6.jpg">
+          <p class="name">宝中皇 项链女 日韩版s925纯银立体皇冠公主吊坠配饰 短款锁骨链送女友</p>
+          <div class="price">
+            <p>￥154.00</p>
+            <s>￥200.20</s> </div>
+          </a> </div>
+        <!--swiper-slide 一项 end--> 
+        <!--swiper-slide 一项-->
+        <div class="swiper-slide"> <a href="#"> <img src="images/simg8.jpg">
+          <p class="name">宝中皇 项链女 日韩版s925纯银立体皇冠公主吊坠配饰 短款锁骨链送女友</p>
+          <div class="price">
+            <p>￥154.00</p>
+            <s>￥200.20</s> </div>
+          </a> </div>
+        <!--swiper-slide 一项 end--> 
+        <!--swiper-slide 一项-->
+        <div class="swiper-slide"> <a href="#"> <img src="images/simg9.jpg">
+          <p class="name">宝中皇 项链女 日韩版s925纯银立体皇冠公主吊坠配饰 短款锁骨链送女友</p>
+          <div class="price">
+            <p>￥154.00</p>
+            <s>￥200.20</s> </div>
+          </a> </div>
+        <!--swiper-slide 一项 end--> 
+        
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination seconds-pagination"></div>
+    </div>
+    <!--swiper-container end--> 
+  </div>
+  <!--m_seconds_con end--> 
+</section>
+<!--seconds_kill end--> 
+<!--seconds_kill--> 
+<script type="text/javascript">
+	var endTime = new Date("2017/6/14,18:27:00");
+	showTime();
+
+	function showTime(){
+		var t;
+		var now = new Date();
+		var diff = (endTime.getTime() - now.getTime())/1000;
+
+		if(diff <= 0){
+			var o = document.getElementById("bot-box");
+			o.style.display="inline-block";
+			o.innerHTML = "秒拍结束：";
+			clearTimeout(t);
+		}else{
+			var h = parseInt(diff / (60 * 60));
+			var m = parseInt((diff / 60) % 60); //计算剩余分钟
+			var s = parseInt(diff % 60); //计算剩余秒
+
+			if(h < 10){
+				h = "0" + h;
+			}
+			if(m < 10){
+				m = "0" + m;
+			}
+			if(s < 10){
+				s = "0" + s;
+			}
+
+			document.getElementById("hours").innerHTML = h;
+			document.getElementById("minutes").innerHTML = m;
+			document.getElementById("seconds").innerHTML = s;
+
+			t = setTimeout(showTime, 1000);
+		}
+	}
+</script>
+<div class="m10"></div>
+<div class="ad_banner m_layout"><img src="images/banner6.jpg"></div>
+<!--m_floor 黄金珠宝-->
+<section class="m_floor m_layout">
+  <h2 class="m_title">黄金珠宝</h2>
+  <!--m_goods-->
+  <div class="m_goods">
+  		<!--m_goods_big-->
+		<div class="m_goods_big clearfix">
+          <div class="row">
+           <a href="#" title="贵夫馆">
+            <div class="text">
+              <p class="name">贵夫馆</p>
+              <p class="info">凸显优雅气质</p>
+              <span class="tag">珍品</span> 
+              </div>
+            <img src="images/himg1.jpg" alt="贵夫馆"> 
+            </a> 
+           </div>
+          <div class="row">
+           <a href="#" title="富豪馆">
+            <div class="text">
+              <p class="name">富豪馆</p>
+              <p class="info">引领时尚潮流</p>
+              <span class="tag">精品</span> 
+             </div>
+            <img src="images/himg2.jpg" alt="富豪馆">
+           </a> 
+          </div>
+          <div class="row">
+            <a href="#" title="婚嫁馆">
+            <div class="text">
+              <p class="name">婚嫁馆</p>
+              <p class="info">经典婚嫁精品</p>
+              <span class="tag">爆款</span> </div>
+            <img src="images/himg3.jpg" alt="婚嫁馆">
+            </a> 
+           </div>
+          <div class="row">
+            <a href="#" title="宝贝馆">
+            <div class="text">
+              <p class="name">宝贝馆</p>
+              <p class="info">行业领先品牌</p>
+              <span class="tag">立减</span> </div>
+            <img src="images/himg4.png" alt="宝贝馆">
+             </a> 
+          </div>
+      </div>
+      <!--m_goods_big end-->
+      <!--m_goods_small-->
+      <div class="m_goods_small clearfix">
+			<div class="row">
+                <a href="#" title="黄金">
+                    <div class="text">
+                        <p class="name">黄金</p>
+                        <p class="info">夏日新款</p>
+                    </div>
+                    <img src="images/himg5.jpg" title="黄金">
+                </a>
+			</div>
+			<div class="row">
+                <a href="#" title="K金">
+                    <div class="text">
+                        <p class="name">K金</p>
+                        <p class="info">畅享豪礼</p>
+                    </div>
+                    <img src="images/himg6.jpg" title="K金">
+                </a>
+			</div>
+			<div class="row">
+                <a href="#" title="铂金">
+                    <div class="text">
+                        <p class="name">铂金</p>
+                        <p class="info">精品盛宴</p>
+                    </div>
+                    <img src="images/himg7.jpg" title="铂金">
+                </a>
+			</div>
+			<div class="row">
+                <a href="#" title="钻石">
+                    <div class="text">
+                        <p class="name">钻石</p>
+                        <p class="info">天天有惊喜</p>
+                    </div>
+                    <img src="images/himg8.jpg" title="钻石">
+                </a>
+			</div>
+			<div class="row">
+                <a href="#" title="彩宝">
+                    <div class="text">
+                        <p class="name">彩宝</p>
+                        <p class="info">畅享豪礼</p>
+                    </div>
+                    <img src="images/himg9.jpg" title="彩宝">
+                </a>
+		</div>
+		<div class="row">
+			<a href="#" title="珍珠">
+				<div class="text">
+					<p class="name">珍珠</p>
+					<p class="info">精品盛宴</p>
+				</div>
+				 <img src="images/himg10.jpg" title="珍珠">
+			</a>
+		</div>
+		<div class="row">
+			<a href="#" title="琥珀">
+				<div class="text">
+					<p class="name">琥珀</p>
+					<p class="info">美丽专享</p>
+				</div>
+				 <img src="images/himg11.jpg" title="琥珀">
+			</a>
+		</div>
+		<div class="row">
+			<a href="#" title="翡翠和田玉">
+				<div class="text">
+					<p class="name">翡翠和田玉</p>
+					<p class="info">新款上架</p>
+				</div>
+				 <img src="images/himg12.jpg" title="翡翠和田玉">
+			</a>
+		</div>
+			</div>
+        <!--m_goods_small end-->
+  </div>
+  <!--m_goods end--> 
+
+ 
+</section>
+<!--m_floor 黄金珠宝 end--> 
+<div class="ad_banner m_layout"><img src="images/banner8.jpg"></div> 
+<!--m_floor 时尚饰品-->
+<section class="m_floor m_layout">
+  <h2 class="m_title">时尚饰品</h2>
+  <!--m_goods-->
+  <div class="m_goods">
+  		<!--m_goods_big-->
+		<div class="m_goods_big clearfix">
+          <div class="row">
+           <a href="#" title="经典馆">
+            <div class="text">
+              <p class="name">经典馆</p>
+              <p class="info">经典精品推荐</p>
+              <span class="tag">珍品</span> 
+              </div>
+            <img src="images/simg1.jpg" alt="经典馆"> 
+            </a> 
+           </div>
+          <div class="row">
+           <a href="#" title="儿童馆">
+            <div class="text">
+              <p class="name">儿童馆</p>
+              <p class="info">可爱宝贝饰品</p>
+              <span class="tag">珍品</span> 
+             </div>
+            <img src="images/simg2.jpg" alt="儿童馆">
+           </a> 
+          </div>
+          <div class="row">
+            <a href="#" title="个性馆">
+            <div class="text">
+              <p class="name">个性馆</p>
+              <p class="info">经典婚嫁精品</p>
+              <span class="tag">爆款</span> </div>
+            <img src="images/simg3.jpg" alt="个性馆">
+            </a> 
+           </div>
+          <div class="row">
+            <a href="#" title="宝贝馆">
+            <div class="text">
+              <p class="name">宝贝馆</p>
+              <p class="info">行业领先品牌</p>
+              <span class="tag">立减</span> </div>
+            <img src="images/simg4.jpg" alt="宝贝馆">
+             </a> 
+          </div>
+      </div>
+      <!--m_goods_big end-->
+      <!--m_goods_small-->
+      <div class="m_goods_small clearfix">
+			<div class="row">
+                <a href="#" title="黄金">
+                    <div class="text">
+                        <p class="name">黄金</p>
+                        <p class="info">夏日新款</p>
+                    </div>
+                    <img src="images/simg5.jpg" title="黄金">
+                </a>
+			</div>
+			<div class="row">
+                <a href="#" title="K金">
+                    <div class="text">
+                        <p class="name">K金</p>
+                        <p class="info">畅享豪礼</p>
+                    </div>
+                    <img src="images/simg6.jpg" title="K金">
+                </a>
+			</div>
+			<div class="row">
+                <a href="#" title="铂金">
+                    <div class="text">
+                        <p class="name">铂金</p>
+                        <p class="info">精品盛宴</p>
+                    </div>
+                    <img src="images/simg7.jpg" title="铂金">
+                </a>
+			</div>
+			<div class="row">
+                <a href="#" title="钻石">
+                    <div class="text">
+                        <p class="name">钻石</p>
+                        <p class="info">天天有惊喜</p>
+                    </div>
+                    <img src="images/simg8.jpg" title="钻石">
+                </a>
+			</div>
+			<div class="row">
+                <a href="#" title="彩宝">
+                    <div class="text">
+                        <p class="name">彩宝</p>
+                        <p class="info">畅享豪礼</p>
+                    </div>
+                    <img src="images/simg9.jpg" title="彩宝">
+                </a>
+		</div>
+		<div class="row">
+			<a href="#" title="珍珠">
+				<div class="text">
+					<p class="name">珍珠</p>
+					<p class="info">精品盛宴</p>
+				</div>
+				 <img src="images/simg10.jpg" title="珍珠">
+			</a>
+		</div>
+		<div class="row">
+			<a href="#" title="琥珀">
+				<div class="text">
+					<p class="name">琥珀</p>
+					<p class="info">美丽专享</p>
+				</div>
+				 <img src="images/simg11.jpg" title="琥珀">
+			</a>
+		</div>
+		<div class="row">
+			<a href="#" title="翡翠和田玉">
+				<div class="text">
+					<p class="name">翡翠和田玉</p>
+					<p class="info">新款上架</p>
+				</div>
+				 <img src="images/himg12.jpg" title="翡翠和田玉">
+			</a>
+		</div>
+			</div>
+        <!--m_goods_small end-->
+  </div>
+  <!--m_goods end--> 
+
+ 
+</section>
+<!--m_floor 时尚饰品 end--> 
+<!--m_floor 专属推荐-->
+<section class="m_floor m_layout">
+  <h2 class="m_title">专属推荐</h2>
+  <!--m_goods-->
+  <div class="m_goods">
+  		<!--m_goods_big-->
+		<div class="m_goods_big clearfix">
+          <div class="row">
+           <a href="#" title="创意礼品">
+            <div class="text">
+              <p class="name">创意礼品</p>
+              <p class="info">创意礼品推荐</p>
+              <span class="tag">珍品</span> 
+              </div>
+            <img src="images/zimg1.jpg" alt="创意礼品"> 
+            </a> 
+           </div>
+          <div class="row">
+           <a href="#" title="工艺品">
+            <div class="text">
+              <p class="name">工艺品</p>
+              <p class="info">独具匠心的佳作</p>
+              <span class="tag">珍品</span> 
+             </div>
+            <img src="images/zimg2.jpg" alt="工艺品">
+           </a> 
+          </div>
+          <div class="row">
+            <a href="#" title="企业订制">
+            <div class="text">
+              <p class="name">企业订制</p>
+              <p class="info">创意企业礼品</p>
+              <span class="tag">爆款</span> </div>
+            <img src="images/zimg3.jpg" alt="企业订制">
+            </a> 
+           </div>
+          <div class="row">
+            <a href="#" title="金银投资">
+            <div class="text">
+              <p class="name">金银投资</p>
+              <p class="info">黄金白银投资</p>
+              <span class="tag">立减</span> </div>
+            <img src="images/zimg4.jpg" alt="金银投资">
+             </a> 
+          </div>
+      </div>
+      <!--m_goods_big end-->
+      <!--m_goods_middle-->
+      <div class="m_goods_middle clearfix">
+			<div class="row">
+                <a href="#" title="黄金">
+                    <div class="text">
+                        <p class="name">黄金</p>
+                        <p class="info">夏日新款</p>
+                    </div>
+                    <img src="images/zimg5.jpg" title="黄金">
+                </a>
+			</div>
+			<div class="row">
+                <a href="#" title="K金">
+                    <div class="text">
+                        <p class="name">K金</p>
+                        <p class="info">畅享豪礼</p>
+                    </div>
+                    <img src="images/zimg6.jpg" title="K金">
+                </a>
+			</div>
+            <div class="row">
+                <a href="#" title="K金">
+                    <div class="text">
+                        <p class="name">K金</p>
+                        <p class="info">畅享豪礼</p>
+                    </div>
+                    <img src="images/zimg7.jpg" title="K金">
+                </a>
+			</div>
+			
+		</div>
+        <!--m_goods_middle end-->
+  </div>
+  <!--m_goods end--> 
+  <!--index-season-->
+  <div class="index-season clearfix">
+		<div class="list">
+		<a href="#" title="大师作品">
+			<p>大师作品</p>
+			<span>精品推荐</span>
+			<img src="images/zimg8.png" alt="大师作品">
+		</a>
+	</div>
+		<div class="list">
+		<a href="#" title="大师直播">
+			<p>大师直播</p>
+			<span>大师风采</span>
+			<img src="images/zimg9.png" alt="大师直播">
+		</a>
+	</div>
+		<div class="list">
+		<a href="#" title="专家推荐">
+			<p>专家推荐</p>
+			<span>爆款饰品</span>
+			<img src="images/zimg10.png" alt="专家推荐">
+		</a>
+	</div>
+		<div class="list">
+		<a href="#" title="专家直播">
+			<p>专家直播</p>
+			<span>知名专家</span>
+			<img src="images/zimg11.png" alt="专家直播">
+		</a>
+	</div>
+  </div>
+  <!--index-season end-->
+</section>
+<!--m_floor 专属推荐 end-->
+
+<!--m_floor 精选珍品-->
+ <section class="m_floor m_layout">
+    <h2 class="m_title">精选珍品</h2>
+    <div class="m_goods_box">
+    	<ul class="clearfix">
+        	<li>
+            	<div class="goods_img"><a href="#"><img src="images/jimg1.jpg"></a></div>
+                <p class="goods_bt"> <a href="#">金中皇  千足金 转运金轮手链   黑紫檀红玛瑙</a> </p>
+                <p class="goods_price"> ￥3858.<i>00</i> </p>
+            </li>
+            <li>
+            	<div class="goods_img"><a href="#"><img src="images/jimg2.jpg"></a></div>
+                <p class="goods_bt"> <a href="#">金中皇  千足金 转运金轮手链   黑紫檀红玛瑙</a> </p>
+                <p class="goods_price"> ￥3858.<i>00</i> </p>
+            </li>
+            <li>
+            	<div class="goods_img"><a href="#"><img src="images/jimg3.jpg"></a></div>
+                <p class="goods_bt"> <a href="#">金中皇  千足金 转运金轮手链   黑紫檀红玛瑙</a> </p>
+                <p class="goods_price"> ￥3858.<i>00</i> </p>
+            </li>
+            <li>
+            	<div class="goods_img"><a href="#"><img src="images/jimg4.jpg"></a></div>
+                <p class="goods_bt"> <a href="#">金中皇  千足金 转运金轮手链   黑紫檀红玛瑙</a> </p>
+                <p class="goods_price"> ￥3858.<i>00</i> </p>
+            </li>
+        
+        </ul>
+   
+    </div>
+  </section>
+<!--m_floor 精选珍品 end--> 
+
+<!--底部操作菜单 foot_tab_box-->
+<footer class="foot_tab_box">
+  <ul>
+    <li class="foot_tab_on"> <a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+  </ul>
+</footer>
+<!--底部操作菜单 foot_tab_box end -->
+
+
+
+<script src="js/jquery-1.10.1.min.js"></script> 
+<script src="js/swiper-3.4.2.min.js"></script> 
+<script>        
+  var mySwiper = new Swiper ('.swiper-banner', {
+    direction: 'horizontal',
+    loop: true,    
+    // 如果需要分页器
+    pagination: '.banner-pagination',	
+	paginationClickable:true,
+   autoplay : 2000,
+   }) ; 
+   
+   var swiper = new Swiper('.swiper-news', {
+  
+        direction: 'vertical',
+        slidesPerView: 1,
+		 loop: true,
+		 autoplay : 3000,
+    });
+   
+   var swiper = new Swiper('.swiper-seconds', {
+  
+        slidesPerView: 3.5,
+        centeredSlides: false,
+        paginationClickable: true,
+        spaceBetween: 10,
+      //  grabCursor: true
+    });
+  
+        
+  </script>
+  <!--滚动屏幕到一定距离后 头部搜索框变化-->
+
+<script type="text/javascript">
+	window.onload = function(){
+    search();
+
+	};
+/*头部搜索*/
+var search = function(){
+    /*搜索框对象*/
+    var search = document.getElementsByClassName('m_header')[0];
+    /*banner对象*/
+    var banner = document.getElementsByClassName('banner')[0];
+    /*高度*/
+    var height = banner.offsetHeight;
+
+    window.onscroll = function(){
+        var top = document.body.scrollTop;
+        /*当滚动高度大于banner的高度时候颜色不变*/
+        if(top > height){
+            search.style.background  = "rgba(255,81,136,0.85)";
+        }else{
+            var op = top/height * 0.85;
+            search.style.background  = "rgba(255,81,136,"+op+")";
+        }
+    };
+};
+</script>
+</body>
+</html>

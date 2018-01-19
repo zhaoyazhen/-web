@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--禁止浏览器从本地缓存中调阅页面;网页不保存在缓存中，每次访问都刷新页面-->
+<meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+
+<!--禁止百度转码 贴广告-->
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+
+<!--顶部状态条的颜色，在web app应用状态条（屏幕顶部条）的颜色；default白色 black黑色 black-translucent灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!--说明：网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--解决uc浏览器在识别到页面文字很多的情况下会自动放大字体优化阅读体验   关闭-->
+<meta name="wap-font-scale" content="no">
+
+<!--"添加到主屏幕“后，全屏显示 <meta name="apple-mobile-web-app-capable" content="yes" />
+这meta的作用就是删除默认的苹果工具栏和菜单栏。content有两个值”yes”和”no”,当我们需要显示工具栏和菜单栏时，这个行meta就不用加了，默认就是显示。-->
+<meta name="apple-touch-fullscreen" content="yes">
+
+<!--如果网页适合在移动设备上进行浏览  终端适配 应该是在移动端日益增长的流量的大势下产生的需求-->
+<meta name="applicable-device" content="mobile">
+
+<!---手机端点击时，禁止出现灰色区域的方法-->
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="keywords" content=" 珠宝街,珠宝商城,珠宝街手机版,黄金、钻石、彩宝、铂金、银饰、翡翠、玉石、珍珠、水晶、手串、手链、手镯、戒指、佛珠、工艺品、企业礼品定制">
+<meta name="description" content=" 珠宝街、珠宝街手机版-中国最大的珠宝商城网站,在线销售黄金、钻石、彩宝、铂金、银饰、翡翠、玉石、珍珠、水晶、手串、手镯、手链、戒指、项链、手表、眼镜、转运珠、佛珠、工艺品、字画收藏、企业礼品定制等海量珠宝品牌，珠宝知名大牌：周大福、老凤祥、周六福、卡地亚、百泰、菜百、周大生、中国黄金均入驻珠宝街平台，更汇聚全国知名珠宝批发基地，买珠宝,就上珠宝街！">
+<title>珠宝街触屏版 一个做真品的网站，黄金、钻石、彩宝、铂金、银饰、翡翠、珍珠、水晶，买珠宝,就上珠宝街！</title>
+<link rel="shortcut icon" href="favicon.ico"  type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="style/m_base.css">
+<link rel="stylesheet" type="text/css" href="style/cart.css">
+<script src="js/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+<!--header-->
+<header class="m_sub_header1 m_layout">
+  <div class="m_header_l"><a href="javascript:window.history.go(-1);" class="iconfont">&#xe61f;</a></div>
+  <h3>购物车</h3>
+  <div class="m_header_r" id="header_opp"> <span>编辑</span> </div>
+</header>
+<!--header end-->
+
+<form id="frm_settlement" name="frm_settlement" method="post" action="#" wss-data-buttons="NoButton">
+  <!--shopping-->
+  <div class="shopping m_layout"> 
+    <!--shop-group-item-->
+    <div class="shop-group-item">
+      <div class="shop-name">
+        <input type="checkbox" class="check goods-check shopCheck">
+        <h4><a href="#">银儿缘旗航店</a></h4>
+      </div>
+      <ul>
+        <li>
+          <div class="shop-info">
+            <input type="checkbox" class="check goods-check goodsCheck">
+            <div class="shop-info-img"><a href="#"><img src="images/carimg1.jpg"></a></div>
+            <div class="shop-info-text">
+              <h4>儿缘  纯银时尚脚链 款式多多</h4>
+              <div class="shop-price">
+                <div class="shop-pices">￥<b class="price">89.00</b></div>
+                <div class="shop-arithmetic"> <a href="javascript:;" class="minus">-</a> <span class="num" >1</span> <a href="javascript:;" class="plus">+</a> </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="shop-info">
+            <input type="checkbox" class="check goods-check goodsCheck">
+            <div class="shop-info-img"><a href="#"><img src="images/carimg1.jpg"></a></div>
+            <div class="shop-info-text">
+              <h4>儿缘  纯银时尚脚链 款式多多</h4>
+              <div class="shop-price">
+                <div class="shop-pices">￥<b class="price">89.00</b></div>
+                <div class="shop-arithmetic"> <a href="javascript:;" class="minus">-</a> <span class="num" >1</span> <a href="javascript:;" class="plus">+</a> </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="shopPrice">本店总计：￥<span class="shop-total-amount ShopTotal">0.00</span></div>
+      <div class="m10"></div>
+    </div>
+    <!--shop-group-item end--> 
+    
+    <!--shop-group-item-->
+    <div class="shop-group-item">
+      <div class="shop-name">
+        <input type="checkbox" class="check goods-check shopCheck">
+        <h4><a href="#"> 宝中皇旗舰店</a></h4>
+      </div>
+      <ul>
+        <li>
+          <div class="shop-info">
+            <input type="checkbox" class="check goods-check goodsCheck">
+            <div class="shop-info-img"><a href="#"><img src="images/carimg1.jpg"></a></div>
+            <div class="shop-info-text">
+              <h4>儿缘  纯银时尚脚链 款式多多</h4>
+              <div class="shop-price">
+                <div class="shop-pices">￥<b class="price">89.00</b></div>
+                <div class="shop-arithmetic"> <a href="javascript:;" class="minus">-</a> <span class="num" >1</span> <a href="javascript:;" class="plus">+</a> </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="shop-info">
+            <input type="checkbox" class="check goods-check goodsCheck">
+            <div class="shop-info-img"><a href="#"><img src="images/carimg3.jpg"></a></div>
+            <div class="shop-info-text">
+              <h4>宝中皇 天然红朱砂手链12毫米 配蜜蜡手串 十二生肖猴子男女款</h4>
+              <div class="shop-price">
+                <div class="shop-pices">￥<b class="price">89.00</b></div>
+                <div class="shop-arithmetic"> <a href="javascript:;" class="minus">-</a> <span class="num" >1</span> <a href="javascript:;" class="plus">+</a> </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="shop-info">
+            <input type="checkbox" class="check goods-check goodsCheck">
+            <div class="shop-info-img"><a href="#"><img src="images/carimg3.jpg"></a></div>
+            <div class="shop-info-text">
+              <h4>宝中皇 S925纯银手镯 明星同款  LOVE情侣螺丝手镯 永恒银手环 女银饰</h4>
+              <div class="shop-price">
+                <div class="shop-pices">￥<b class="price">89.00</b></div>
+                <div class="shop-arithmetic"> <a href="javascript:;" class="minus">-</a> <span class="num" >1</span> <a href="javascript:;" class="plus">+</a> </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="shopPrice">本店总计：￥<span class="shop-total-amount ShopTotal">0.00</span></div>
+       <div class="m10"></div>
+    </div>
+    <!--shop-group-item end--> 
+    
+    <!--foot-edit-->
+    <div class="payment-bar foot-edit">
+      <div class="all-checkbox"><input type="checkbox" class="check goods-check" id="AllCheck1">全选</div>
+      <button class="settlement">删除</button> </div>
+    <!--foot-edit end--> 
+    <!--foot-bar-->
+    <div class="payment-bar foot-bar1">
+      <div class="all-checkbox"><input type="checkbox" class="check goods-check" id="AllCheck">全选</div>
+      <div class="shop-total"> <strong>合计：<i class="total" id="AllTotal">0.00</i></strong>
+<span>不含运费</span> </div>
+      <button  class="settlement" disabled>结算</button> </div>
+    <!--foot-bar end--> 
+    
+  </div>
+  <!--shopping end-->
+</form>
+<div style="height:1rem;"></div>
+<!--底部操作菜单 foot_tab_box-->
+<footer class="foot_tab_box">
+  <ul>
+    <li class="foot_tab_on"><a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+  </ul>
+</footer>
+<!--底部操作菜单 foot_tab_box end --> 
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/shopping.js"></script>
+</body>
+</html>

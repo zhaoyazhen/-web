@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--禁止浏览器从本地缓存中调阅页面;网页不保存在缓存中，每次访问都刷新页面-->
+<meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+
+<!--禁止百度转码 贴广告-->
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+
+<!--顶部状态条的颜色，在web app应用状态条（屏幕顶部条）的颜色；default白色 black黑色 black-translucent灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!--说明：网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--解决uc浏览器在识别到页面文字很多的情况下会自动放大字体优化阅读体验   关闭-->
+<meta name="wap-font-scale" content="no">
+
+<!--"添加到主屏幕“后，全屏显示 <meta name="apple-mobile-web-app-capable" content="yes" />
+这meta的作用就是删除默认的苹果工具栏和菜单栏。content有两个值”yes”和”no”,当我们需要显示工具栏和菜单栏时，这个行meta就不用加了，默认就是显示。-->
+<meta name="apple-touch-fullscreen" content="yes">
+
+<!--如果网页适合在移动设备上进行浏览  终端适配 应该是在移动端日益增长的流量的大势下产生的需求-->
+<meta name="applicable-device" content="mobile">
+
+<!---手机端点击时，禁止出现灰色区域的方法-->
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="keywords" content=" 珠宝街,珠宝商城,珠宝街手机版,黄金、钻石、彩宝、铂金、银饰、翡翠、玉石、珍珠、水晶、手串、手链、手镯、戒指、佛珠、工艺品、企业礼品定制">
+<meta name="description" content=" 珠宝街、珠宝街手机版-中国最大的珠宝商城网站,在线销售黄金、钻石、彩宝、铂金、银饰、翡翠、玉石、珍珠、水晶、手串、手镯、手链、戒指、项链、手表、眼镜、转运珠、佛珠、工艺品、字画收藏、企业礼品定制等海量珠宝品牌，珠宝知名大牌：周大福、老凤祥、周六福、卡地亚、百泰、菜百、周大生、中国黄金均入驻珠宝街平台，更汇聚全国知名珠宝批发基地，买珠宝,就上珠宝街！">
+<title>珠宝街触屏版 一个做真品的网站，黄金、钻石、彩宝、铂金、银饰、翡翠、珍珠、水晶，买珠宝,就上珠宝街！</title>
+<link rel="shortcut icon" href="favicon.ico"  type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="style/m_base.css">
+<link rel="stylesheet" type="text/css" href="style/category.css">
+<script src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {  
+    $(".tabs li").click(function() {  
+       $(".tabs li a").removeClass("current");
+	   $(this).children("a").addClass("current");
+	   
+	   $(".m_category_right").hide(0);
+	   $(".m_category_right:eq(" + $(this).index() + ")").show(0);
+    });   
+  
+});  
+</script>
+</head>
+
+<body>
+<!--header-->
+<header class="m_sub_header">
+  <div class="m_header_l"><a href="#"><img src="images/logo_white.png"></a></div>
+  <div class="m_search_box">
+    <form action="#" method="post">
+      <input type="search" placeholder="请输入关键字">
+      <input type="submit" value="&#xe601;" class="iconfont">
+    </form>
+  </div>
+</header>
+<!--header end--> 
+<!--m_category_box-->	
+<div class="m_category_box">
+	<!--m_category_left-->
+	<div class="m_category_left">
+    	<ul class="tabs">
+          <li><a href="javascript:;">为您推荐</a></li>
+          <li><a href="javascript:;"  class="current" >名品大牌</a></li>
+          <li><a href="javascript:;">创意空间</a></li>
+          <li><a href="javascript:;">珠宝基地</a></li>
+          <li><a href="javascript:;">黄金</a></li>
+          <li><a href="javascript:;">K金</a></li>
+          <li><a href="javascript:;">铂金</a></li>
+          <li><a href="javascript:;">银饰</a></li>
+          <li><a href="javascript:;">钻石</a></li>
+          <li><a href="javascript:;">彩宝</a></li>
+          <li><a href="javascript:;">珍珠</a></li>
+          <li><a href="javascript:;">首饰</a></li>
+          <li><a href="javascript:;">翡翠</a></li>
+          <li><a href="javascript:;">和田玉</a></li>
+          <li><a href="javascript:;">水晶</a></li>
+          <li><a href="javascript:;">琥珀</a></li>
+          <li><a href="javascript:;">蜜蜡</a></li>
+          <li><a href="javascript:;">南红</a></li>
+          <li><a href="javascript:;">玛瑙</a></li>
+          <li><a href="javascript:;">玉石</a></li>
+          <li><a href="javascript:;">鸡血石</a></li>
+          <li><a href="javascript:;">木串把件</a></li>
+          <li><a href="javascript:;">工艺品</a></li>
+          <li><a href="javascript:;">创意礼品</a></li>
+          <li><a href="javascript:;">钟表</a></li>
+          <li><a href="javascript:;">眼镜</a></li>
+          <li><a href="javascript:;">瓷器紫砂</a></li>
+          <li><a href="javascript:;">字画收藏</a></li>
+          <li><a href="javascript:;">金银投资</a></li>
+     </ul>
+    </div>
+    <!--m_category_left end-->
+    <!--m_category_right-->
+	 <div class="m_category_right">
+     		<div class="m_category_con">
+            	<!--cat_banner-->
+            	<div class="cat_banner">
+            		<a href="#"><img src="images/cat_banner1.jpg"></a>
+                </div>
+                <!--cat_banner end-->
+                 <dl class="cat_zc">
+                  <dt>大牌专场</dt>
+                  <dd >
+                    <ul class="clearfix">
+                      <li> <a href="#"> <img  src="images/cat_img1.jpg" title="黄金盛典"> <span>黄金盛典</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_img2.jpg" title="银饰盛宴"> <span>银饰盛宴</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_img3.jpg" title="温润美玉"> <span>温润美玉</span> </a> </li>
+                      
+                     </ul>
+                     
+                  </dd>
+                </dl>
+                
+                <dl class="cat_brand">
+                  <dt>品牌墙</dt>
+                  <dd>
+                    <ul class="clearfix">
+                      <li> <a href="#"> <img src="images/cat_bimg1.jpg" title="钻石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg2.jpg" title="彩色宝石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg3.jpg" title="玉石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg4.jpg" title="黄金"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg5.jpg" title="珍珠"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg6.jpg" title="珍珠"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg1.jpg" title="钻石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg2.jpg" title="彩色宝石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg3.jpg" title="玉石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg4.jpg" title="黄金"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg5.jpg" title="珍珠"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg6.jpg" title="珍珠"> <span>周大福</span> </a> </li>
+                      
+                    </ul>
+                  </dd>
+                </dl>
+            </div>
+    </div>
+      <!--m_category_right end-->
+      
+      <!--m_category_right-->
+	 <div class="m_category_right">
+     		<div class="m_category_con">
+            	<!--cat_banner-->
+            	<div class="cat_banner">
+            		<a href="#"><img src="images/cat_banner2.png"></a>
+                </div>
+                <!--cat_banner end-->
+                 <dl class="cat_zc">
+                  <dt>大牌专场</dt>
+                  <dd >
+                    <ul class="clearfix">
+                      <li> <a href="#"> <img  src="images/cat_img1.jpg" title="黄金盛典"> <span>黄金盛典111</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_img2.jpg" title="银饰盛宴"> <span>银饰盛11宴</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_img3.jpg" title="温润美玉"> <span>温润美玉</span> </a> </li>
+                      
+                     </ul>
+                     
+                  </dd>
+                </dl>
+                
+                <dl class="cat_brand">
+                  <dt>品牌墙</dt>
+                  <dd>
+                    <ul class="clearfix">
+                      <li> <a href="#"> <img src="images/cat_bimg1.jpg" title="钻石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg2.jpg" title="彩色宝石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg3.jpg" title="玉石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg4.jpg" title="黄金"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg5.jpg" title="珍珠"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg6.jpg" title="珍珠"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg1.jpg" title="钻石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg2.jpg" title="彩色宝石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg3.jpg" title="玉石"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg4.jpg" title="黄金"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg5.jpg" title="珍珠"> <span>周大福</span> </a> </li>
+                      <li> <a href="#"> <img src="images/cat_bimg6.jpg" title="珍珠"> <span>周大福</span> </a> </li>
+                      
+                    </ul>
+                  </dd>
+                </dl>
+            </div>
+    </div>
+      <!--m_category_right end-->
+</div>
+<!--m_category_box end-->	
+<!--底部操作菜单 foot_tab_box-->
+<footer class="foot_tab_box">
+  <ul>
+    <li class="foot_tab_on"><a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+    <li> <a href="#"></a> </li>
+  </ul>
+</footer>
+<!--底部操作菜单 foot_tab_box end -->
+
+</body>
+</html>
